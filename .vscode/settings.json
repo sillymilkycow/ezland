@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "node_modules": true
+  },
+  "workbench.tree.indent": 14,
+  "editor.lineHeight": 20,
+  "explorer.decorations.badges": false,
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontSize": 12,
+  "folder-color.pathColors": []
+}

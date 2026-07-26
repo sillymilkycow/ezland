@@ -25,7 +25,8 @@ class Header extends EzAlpineHTMLElement {
         return {
             selectedIdx: null,
             menuArr: [
-                {title:'EzLand.js', url:'/index.html'}
+                {title:'EzLand.js', url:'/index.html'},
+                {title:'GitHub Repo', url:'https://github.com/ezlandjs/ezlandjs.github.io'}
             ],
             init(){
                 let self = this;
