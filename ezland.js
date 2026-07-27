@@ -1,4 +1,4 @@
-/** EzLand.js | v 1.0.4 - simple small lib for page-render by JS components 
+/** EzLand.js | v 1.0.5 - simple small lib for page-render by JS components 
  * Creator: Hrynchyk Dzmitryi
 */
 class EzHTMLElement extends HTMLElement {
@@ -156,6 +156,7 @@ $ez = (function() {
                     for (let i = 0; i < this.attributes.length; i++) {
                         const attr = this.attributes[i];
                         attrs[attr.name] = attr.value;
+                        attrs[attr.name + '_safe'] = $ez.$escapeHtml(attr.value);
                     }
                     return attrs;
                 },
@@ -351,6 +352,10 @@ $ez = (function() {
                 return;
             }
             this.$interactMethods.push(callback);
+        },
+        $escapeHtml(str) {
+            return String(str).replaceAll('&', '&amp;').replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
         }
     }
 })();
