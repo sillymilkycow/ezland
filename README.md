@@ -34,3 +34,8 @@ Your browser, along with EzLand.js, will assemble the entire page itself!
 ```
 ./src/components
 ```
+
+### 🌐 Additional
+[Landing page example](https://grinchikjd.github.io/)
+
+[Landing page GitHub code](https://github.com/GrinchikJD/grinchikjd.github.io)
